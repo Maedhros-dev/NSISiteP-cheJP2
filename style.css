@@ -532,6 +532,14 @@ iframe{
         transition: left 0.5s ease;
     }
 
+    .left img{
+        right: 0;
+    }
+    
+    .right p,.right h2,.right h3,.right h4 {
+        left: 0;
+    }
+
     .sidenav ul {
       list-style-type: none;
       padding: 0;
