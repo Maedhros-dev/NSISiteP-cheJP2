@@ -3,7 +3,7 @@
 La peche à la mouche est une peche tres difficiles, contrairement a la peche au leurre ou c'est celui ci qui envoie le fil à la mouche c'est differents car c'est le fil qui envoie la mouche 
 
 /!-->
-<php lang="fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,4 +55,4 @@ La peche à la mouche est une peche tres difficiles, contrairement a la peche au
             </div>
         </div>
     </body>
-</php>
+</html>

@@ -2,7 +2,7 @@
 
 Les lignes de fonds sont dit dormantes la igne est tendu depuis la cannne jusqu'au poid au fond de la mer on noud des ligne annexe on l'on esche des appas (ver de vase) c'est un technique passive mais qui rapportes gros (dorade royale, dorades grise, lieux, bars, maigres) se font regulierement attraper
 /!-->
-<php lang="fr">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,4 +43,4 @@ Les lignes de fonds sont dit dormantes la igne est tendu depuis la cannne jusqu'
             </div>
         </div>
     </body>
-</php>
+</html>
