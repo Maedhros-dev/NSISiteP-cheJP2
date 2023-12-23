@@ -14,6 +14,7 @@ body {
     display: flex;
     height: 103px;
     top: 0;
+    left: 0;
 }
 
 #header {
@@ -23,7 +24,7 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -72,10 +73,13 @@ nav a:hover {
     font-size: 20px;
     text-align: left;
     justify-content: left;
+    align-self: center;
+    height: 100%;
 }
 
-.left p h2{
+.left h3,.left h2,.left p,.left h4{
     margin-left: 60px;
+    text-align: left;
 }
 
 .right {
@@ -84,12 +88,23 @@ nav a:hover {
     font-size: 20px;
     text-align: right;
     justify-content: right;
+    align-self: end;
+    align-self: center;
+    height: 100%;
 }
 
-.right p h2 {
+.right p,.right h2,.right h3,.right h4 {
     margin-right: 60px;
+    text-align: right;
 }
 
+.left img{
+    left: 50%;
+}
+
+.right p,.right h2,.right h3,.right h4 {
+    right: 50%
+}
 
 h2{
     font-size: 35px;
@@ -107,7 +122,7 @@ h2{
     display: flex;
     z-index: 1;
     align-items: center;
-    padding-top: 103px;
+    padding-top: 150px;
 }
 
 #c1 p, #c1 h2, #c1 li {
@@ -115,23 +130,22 @@ h2{
     margin-right: 60px;
 }
 
-#c2 {
+#c2, #c4 {
     padding-top: 10%;
     display: flex;
     z-index: 1;
     align-items: center;
 }
 
-#c2 p, #c2 h2, #c2 li, #c3 p, #c3 h2, #c3 li{
+#c2 p, #c2 h2, #c2 li, #c3 p, #c3 h2, #c3 li, #c4 p, #c4 h2, #c4 li{
     margin-left: 60px;
     margin-right: 60px;
 }
 
-#c3, #c4 {
+#c3 {
     padding-top:10% ;
     display: flex;
     z-index: 1;
-    margin-left: 60px;
     align-items: center;
 }
 
@@ -142,7 +156,7 @@ h2{
     margin: auto;
     display: flex;
     align-items: center;
-    
+
 }
 
 #pendu {
@@ -238,8 +252,9 @@ h2{
     width: 100%;
     font-size: 20px;
     left:0;
-    
+
 }
+
 nav > ul li:hover .sous{
     display: block;
     margin-top: 4%;
@@ -450,4 +465,157 @@ p {
 
 iframe{
     margin: auto;
+}
+
+@media only screen and (max-width: 1540px) {
+    div{
+        flex-direction: column;
+    }
+
+    #c1 p, #c1 h2, #c1 li, #c2 p, #c2 h2, #c2 li, #c3 p, #c3 h2, #c3 li, #c4 p, #c4 h2, #c4 li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .right, .left{
+        float: center;
+    }
+
+    .right p,.right h2,.right h3,.right h4 {
+        margin-right: 0px;
+        margin-left: 10px;
+        text-align: left;
+    }
+    .left h3,.left h2,.left p,.left h4{
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    #logo {
+        height: 60px;
+        width: 291.267;
+    }
+    #dnav {
+        display: none;
+    }
+    h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+    }
+    h3{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    h4{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    #c1{
+        padding-top: 95px;
+    }
+
+
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        left: -250px;
+        position: fixed;
+        z-index: 1;
+        background-color: #e8e8e8;
+        padding-top: 60px;
+        transition: left 0.5s ease;
+    }
+
+    .sidenav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #111111;
+    }
+
+    iframe {
+        width: 100%;
+    }
+    
+    .sidenav.active {
+      left: 0;
+    }
+
+    .sidenav .close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    .burger-icon {
+        position: fixed;
+        right: 15px;
+        top: 10px;
+    }
+    .burger-icon span {
+        display: flex;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+    }
+    #header {
+        height: 60px;
+        position: fixed;
+    }
+    .carte {
+        width: 300px;
+        align-self: center;
+    }
+    .carte p {
+        width: 260px;
+        align-self: center;
+        font-size: 15px;
+    }
+    p {
+        margin-left: 10px;
+        font-size: 15px;
+
+    }
+    #cdp p {
+        width: 50%;
+        align-self: left;
+    }
+    #cdp select {
+        align-self: right;
+    }
+    .left, .right {
+        width: 100%
+    }
+    td, th, tr {
+        padding: 0;
+    }
+    #slogan h1 {
+        margin: 0;
+        padding-right: 0;
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (min-width: 1541px){
+        #mobnav {
+            display: none;
+    }
 }

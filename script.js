@@ -85,3 +85,16 @@ function zoomIn(arg) {
 function zoomOut() {
     document.getElementById('zinf').style.display = "none";
 }
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    var sidenav = document.getElementById("mobnav");
+    sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    var sidenav = document.getElementById("mobnav");
+    sidenav.classList.remove("active");
+}
