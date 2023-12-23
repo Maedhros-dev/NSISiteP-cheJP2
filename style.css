@@ -99,12 +99,12 @@ nav a:hover {
 }
 
 .left img{
-    left: 100%;
+    right: 100%;
     position: relative;
 }
 
 .right p,.right h2,.right h3,.right h4 {
-    right: 100%;
+    left: 100%;
     position: relative;
 }
 
