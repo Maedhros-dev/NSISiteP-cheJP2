@@ -13,7 +13,7 @@
                 <div  id="c1">
                     <div class="left">
                         <h2>Cannes</h2>
-                        <p>La canne à pêche est l'élément principal du materiel qui compose une canne a peche. Elles se differencient par leures puissances qui definie le grammage qu'elles peuvent lancer, la longueur de la canne qui definie plus ou moins la distance de lancer, ces ensemble doivent être equilibrée afin d'avoir un certain comfort de peche et pour que la resonance de la canne soit optimale (la resonance est le fait de resentir tout les vibrations qui sont transmises dans le fil et de savoir les differencier).</p>
+                        <p>La canne à pêche est l'élément principal du materiel qui compose une canne a pêche. Elles se differencient par leures puissances qui definie le grammage qu'elles peuvent lancer, la longueur de la canne qui definie plus ou moins la distance de lancer, ces ensemble doivent être equilibrée afin d'avoir un certain comfort de peche et pour que la resonance de la canne soit optimale (la resonance est le fait de resentir tout les vibrations qui sont transmises dans le fil et de savoir les differencier).</p>
                     </div>
                     <div class="right">
                         <img src="../comp/canne.jpg" alt="image de canne" id="c1img">
