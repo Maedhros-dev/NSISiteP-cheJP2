@@ -99,11 +99,13 @@ nav a:hover {
 }
 
 .left img{
-    left: 50%;
+    left: 100%;
+    position: relative;
 }
 
 .right p,.right h2,.right h3,.right h4 {
-    right: 50%
+    right: 100%;
+    position: relative;
 }
 
 h2{
