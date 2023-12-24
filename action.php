@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Adresse e-mail où vous souhaitez recevoir le message
-    $destinataire = "votre@email.com";
+    $destinataire = "elijah.tallur@proton.me";
 
     // Sujet du message
     $sujet = "Nouveau message de $nom";
