@@ -319,6 +319,10 @@ nav > ul li:hover .sous{
     border-radius: 35px;
 }
 
+.carte:hover{
+    cursor: pointer;
+}
+
 .carte p{
     display: none;
     position: absolute;
