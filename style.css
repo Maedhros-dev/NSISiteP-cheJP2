@@ -163,15 +163,13 @@ h2{
 
 #button {
     margin-top: 20px;
-    padding: 20px 40px;
-    background-color: #efefe0;
-    color: #423e3a;
-    border: none;
+    padding: 10px 20px;
+    color: black;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
-    border: #423e3a 3px solid;
+    border: black 2px solid;
  }
 
  .footer {
@@ -338,6 +336,21 @@ li {
 
 form {
     margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#champ {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+
+input {
+    margin-left: 60px;
+    width: 50%;
 }
 
 input {
