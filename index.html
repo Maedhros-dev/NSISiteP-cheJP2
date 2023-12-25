@@ -100,9 +100,9 @@
                     <label for="message">Lettre de motivation</label>
                     <textarea name="message" rows="4" required></textarea><br>
                 
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Envoyer" id="button" onclick="document.getElementById('hidden_iframe').style.display = 'flex'">
                 </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:flex;"></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
             </div>
             <div class="footer">
                 <div class="left">

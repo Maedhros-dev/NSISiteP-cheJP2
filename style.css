@@ -161,24 +161,7 @@ h2{
 
 }
 
-#pendu {
-    padding-top: 10%;
-    background-color: #efefe0;
-    z-index: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 5%;
-}
-
-#pendu h2 {
-    display: block;
-}
-
-
-#pendu button {
+#button {
     margin-top: 20px;
     padding: 20px 40px;
     background-color: #efefe0;
@@ -189,11 +172,6 @@ h2{
     font-weight: bold;
     border-radius: 5px;
     border: #423e3a 3px solid;
- }
-
- #pendu button:hover {
-    background-color: #423e3a;
-    color: #efefe0;
  }
 
  .footer {
@@ -349,6 +327,21 @@ li {
 
 .form p{
     width: 275px
+}
+
+#hidden_iframe {
+    margin-left: 60px;
+    display:none;
+    border: 0;
+    width: 80%;
+}
+
+form {
+    margin-left: 60px;
+}
+
+input {
+    margin-left: 60px;
 }
 
 select{
