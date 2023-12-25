@@ -90,7 +90,7 @@
                     <iframe width="1039" height="779" src="https://www.youtube.com/embed/oKWglREK5jU?autoplay=1" title="C&#39;est pas sorcier -  QUI EST AU BOUT DU FIL ?
                     (Pêche)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <form method="post" action="action.php">
+                <form method="post" action="action.php" target="hidden_iframe">
                     <label for="nom">Prénom NOM :</label>
                     <input type="text" name="nom" required><br>
                 
@@ -102,6 +102,7 @@
                 
                     <input type="submit" value="Envoyer">
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
             </div>
             <div class="footer">
                 <div class="left">

@@ -39,7 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(!$mail->send()){
         echo "Erreur :" . $mail->ErrorInfo;
     }else{
-        echo "Candidature envoyée ! Vous recevrez une validation par email d'ici moins d'une minute (vraiment).";
+        echo "script type='text/javascript'>
+        parent.postMessage('Candidature envoyée ! Vous recevrez une validation par email d'ici moins d'une minute (vraiment).', '*');
+      </script>";
     }
 }
 ?>
