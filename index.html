@@ -90,22 +90,25 @@
                     <iframe width="1039" height="779" src="https://www.youtube.com/embed/oKWglREK5jU?autoplay=1" title="C&#39;est pas sorcier -  QUI EST AU BOUT DU FIL ?
                     (Pêche)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <form method="post" action="action.php" target="hidden_iframe">
-                    <span id="champ">
-                        <label for="nom">Prénom NOM :</label>
-                        <input type="text" name="nom" required><br>
-                    </span>
-                    <span id="champ">
-                        <label for="email">E-mail :</label>
-                        <input type="email" name="email" required><br>
-                    </span>
-                    <span id="champ">
-                        <label for="message">Lettre de motivation</label>
-                        <textarea name="message" rows="4" required></textarea><br>
-                    </span>
-                    <input type="submit" value="Envoyer" id="button" onclick="document.getElementById('hidden_iframe').style.display = 'flex'">
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+                <div style="display: flex; flex-direction: column; margin: auto;">
+                    <h2 style="margin: 60px auto;">Nous rejoindre</h2>
+                    <form method="post" action="action.php" target="hidden_iframe">
+                        <span id="champ">
+                            <label for="nom">Prénom NOM :</label>
+                            <input type="text" name="nom" required><br>
+                        </span>
+                        <span id="champ">
+                            <label for="email">E-mail :</label>
+                            <input type="email" name="email" required><br>
+                        </span>
+                        <span id="champ">
+                            <label for="message">Lettre de motivation :</label>
+                            <textarea name="message" rows="4" required></textarea><br>
+                        </span>
+                        <input type="submit" value="Envoyer" id="button" onclick="document.getElementById('hidden_iframe').style.display = 'flex'">
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+                </div>
             </div>
             <div class="footer">
                 <div class="left">

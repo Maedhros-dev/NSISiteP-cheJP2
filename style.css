@@ -170,6 +170,8 @@ h2{
     font-weight: bold;
     border-radius: 5px;
     border: black 2px solid;
+    margin-left:0;
+    width: auto;
  }
 
  .footer {
@@ -343,18 +345,16 @@ form {
 
 #champ {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     width: 70%;
+    align-items: center;
+    margin: 5px 0;
 }
 
 
-input {
-    margin-left: 60px;
-    width: 50%;
-}
-
-input {
-    margin-left: 60px;
+input, textarea {
+    margin-left: auto;
+    width: 70%;
 }
 
 select{
