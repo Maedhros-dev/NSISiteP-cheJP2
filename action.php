@@ -9,16 +9,14 @@ require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
 $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->SMTPDebug = 2; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
-$mail->Host = "smtp.gmail.com"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
+$mail->Host = "smtp.orange.fr"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
 $mail->SMTPAuth = true;
-$mail->Username = 'iopnyuil@gmail.com'; // email
-$mail->Password = 'WJEh1G*(#G6<)e8c'; // password
-$mail->setFrom('system@cksoftwares.com', 'CKSoftwares System'); // From email and name
-$mail->addAddress('elijah.tallur@proton.me', 'Mr. Moi'); // to email and name
-$mail->Subject = 'PHPMailer GMail SMTP test';
-$mail->msgHTML("test body"); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
+$mail->Username = 'elijah.tallur@orange.fr'; // email
+$mail->Password = ''; // password
+$mail->setFrom('elijah.tallur@orange.fr', 'Peche SA'); // From email and name
+ //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
 $mail->AltBody = 'HTML messaging not supported'; // If html emails is not supported by the receiver, show this body
 // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
 $mail->SMTPOptions = array(
@@ -33,27 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
     $nom = $_POST["nom"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
-
-    // Adresse e-mail où vous souhaitez recevoir le message
-    $destinataire = "test";
-
-    // Sujet du message
-    $sujet = "Nouveau message de $nom";
-
-    // Construire le corps du message
-    $corps_message = "Nom: $nom\n";
-    $corps_message .= "Email: $email\n";
-    $corps_message .= "Message:\n$message";
-
-    // En-têtes du message
-    $entetes = "De: $destinataire\r\n";
+    $mail->addAddress($email, $nom); // to email and name
+    $mail->Subject = 'Votre candidature';
+    $mail->msgHTML('Bonjour,<br>votre Candidature a bien ete prise en compte.<br><br> Cordialement,<br>Peche SA'); 
 
     // Envoyer l'e-mail
     if(!$mail->send()){
-        echo "Mailer Error: " . $mail->ErrorInfo;
+        echo "Erreur :" . $mail->ErrorInfo;
     }else{
-        echo "Message sent!";
+        echo "Candidature envoyée ! Vous recevrez une validation par email d'ici moins d'une minute (vraiment).";
     }
 }
 ?>
