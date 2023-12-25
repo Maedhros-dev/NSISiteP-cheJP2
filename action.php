@@ -8,7 +8,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
 
 $mail = new PHPMailer;
 $mail->isSMTP(); 
-$mail->SMTPDebug = 2; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
+$mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
 $mail->Host = "smtp.orange.fr"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
 $mail->Port = 587; // TLS only
 $mail->SMTPSecure = 'tls'; // ssl is deprecated
@@ -17,7 +17,7 @@ $mail->Username = 'elijah.tallur@orange.fr'; // email
 $mail->Password = ''; // password
 $mail->setFrom('elijah.tallur@orange.fr', 'Peche SA'); // From email and name
  //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
-$mail->AltBody = 'HTML messaging not supported'; // If html emails is not supported by the receiver, show this body
+$mail->AltBody = 'Bonjour,<br>votre Candidature a bien ete prise en compte.<br><br> Cordialement,<br>Peche SA'; // If html emails is not supported by the receiver, show this body
 // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
 $mail->SMTPOptions = array(
                     'ssl' => array(
