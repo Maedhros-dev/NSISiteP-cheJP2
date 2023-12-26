@@ -1,4 +1,4 @@
-function show_hide(arg) {
+function show_hide(arg) { //change le css pour afficher le tecte et assombrir l'image quand click et inversement
     let ci = document.getElementById("i"+arg);
     let ct = document.getElementById("t"+arg);
     if (ct.style.display === "none" || !ct.style.display) {
@@ -13,7 +13,7 @@ function show_hide(arg) {
     };
 };
 
-function Cform() {
+function Cform() { //simple arbre en fonction des choix pour la carte de pêche
     let fa = document.getElementById("fage").value;
     let fp = document.getElementById("fparc").value;
     let fs = document.getElementById("fsexe").value;
@@ -61,13 +61,13 @@ function Cform() {
         res = "Carte Journalière";
         resl = "https://www.peche35.fr/uploads/Image/6b/36183_779_carte-journaliere-2023.png";
     }
-    document.getElementById("tres").textContent = `Vous devez prendre une ${res}`;
+    document.getElementById("tres").textContent = `Vous devez prendre une ${res}`; //affiche après le resultat et l'image
     document.getElementById("ires").style.backgroundImage = `url(${resl})`;
     document.getElementById("ires").style.display = "block";
 };
 
 
-function zoomIn(arg) {
+function zoomIn(arg) { //pour le zoom sur les image quand cliqué
     let zinf = document.getElementById('zinf');
     let zinfc = document.getElementById("zinfcontent");
     zinf.style.display = "block";
@@ -82,19 +82,17 @@ function zoomIn(arg) {
     zinfc.src = `${arg.src}`;
 };
 
-function zoomOut() {
+function zoomOut() { //ppur enlever ce même zoom
     document.getElementById('zinf').style.display = "none";
 }
 
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
+function openNav() { //affiche en rajoutant une classe le header mobile
     var sidenav = document.getElementById("mobnav");
     sidenav.classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
+function closeNav() { //l'inverse
     var sidenav = document.getElementById("mobnav");
     sidenav.classList.remove("active");
 }
