@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $mail->addAddress($email, $nom); // À : email et nom
     $mail->Subject = 'Votre candidature';
-    $mail->msgHTML('Bonjour,<br>votre candidature a bien été prise en compte.<br><br> Cordialement,<br>Peche SA');  //corps du mail en html
+    $mail->msgHTML('Bonjour,<br>votre candidature a bien ete prise en compte.<br><br> Cordialement,<br>Peche SA');  //corps du mail en html
 
     // Envoyer l'e-mail
     if(!$mail->send()){
