@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piqués de pêche</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
     <body>
         <?php
             use PHPMailer\PHPMailer\PHPMailer;
@@ -38,7 +44,7 @@
 
                 // Envoyer l'e-mail
                 if(!$mail->send()){
-                    echo "Erreur :" . $mail->ErrorInfo; //en cas d'erreur, l'affiche
+                    echo "Erreur : " . $mail->ErrorInfo; //en cas d'erreur, l'affiche
                 }else{
                     echo "Candidature envoyée ! Vous recevrez une validation par email d'ici moins d'une minute (vraiment)."; 
                 }
