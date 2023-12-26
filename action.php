@@ -17,7 +17,6 @@ $mail->Username = 'elijah.tallur@orange.fr'; // email
 $mail->Password = ''; // mot de passe (que sur l'hébergeur)
 $mail->setFrom('elijah.tallur@orange.fr', 'Peche SA'); // De : Email et Nom
 $mail->AltBody = 'Bonjour,<br>votre Candidature a bien ete prise en compte.<br><br> Cordialement,<br>Peche SA'; // Si le html n'est pas supporté par celui qui reçoit
-// $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
 $mail->SMTPOptions = array(
                     'ssl' => array(
                         'verify_peer' => false,
